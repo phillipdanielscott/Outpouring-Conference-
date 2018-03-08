@@ -254,3 +254,139 @@ mark {
  top: 37px;
  max-width: 50px;
 }
+
+
+/*============================================================================
+
+
+                                third SECTION
+
+
+==============================================================================*/
+
+.embed-responsive {
+ margin: 0 auto !important;
+ width: 75% !important;
+ height: 75% !important;
+}
+
+
+/*============================================================================
+
+
+                                fourth SECTION
+
+
+==============================================================================*/
+
+.jc-logo-bottom {
+ max-width: 42px;
+ position: absolute;
+ right: 61px;
+ top: 28px;
+}
+
+.fourth-section .row {
+ margin: 0px;
+}
+
+.fourth-section-content-wrapper {
+ padding: 80px 160px;
+}
+
+.speaker-1, .speaker-2, .speaker-3, .speaker-4 {
+ width: 50%;
+ margin-bottom: 45px;
+ padding: 0px;
+}
+
+.second-section-wrapper .outpouring-footer {
+ color: white;
+}
+
+.fourth-section-text-wrapper {
+ padding: 50px 90px 50px 90px;
+ /*margin: 0px;*/
+}
+
+.speaker-container h3 {
+ font-family: laureate_v2;
+ font-weight: 600;
+ font-size: 40px;
+ padding-bottom: 5px;
+}
+
+.speaker-container span {
+ font-family: 'Roboto', sans-serif;
+ font-size: 14px;
+ font-weight: 400;
+}
+
+.speaker-container p {
+ font-size: 18px;
+ margin: 0px;
+ font-size: 18px;
+ padding-bottom: 2px;
+}
+
+.register-image-container h3 {
+ font-family: laureate_v1;
+ font-weight: 600;
+ letter-spacing: 1.1px;
+ color: #636466;
+ padding: 0px;
+ font-size: 31px;
+}
+
+.register-image-container .col {
+ padding: 0px;
+}
+
+.bottom-second-half h4 {
+ font-family: laureate_v2;
+ font-size: 46px;
+ color: white;
+ font-weight: 500;
+ position: absolute;
+ bottom: 50%;
+ padding-left: 50px;
+ line-height: 1;
+}
+
+.fourth-section-text-wrapper .jc-logo {
+ max-height: 40px;
+ vertical-align: middle;
+ border-style: none;
+ max-height: 40px;
+ position: absolute;
+ right: 62px;
+ bottom: 116px;
+}
+
+.water-fall-bg-bottom {
+ background: url("/assets/img/hero-image.png");
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ background-repeat: no-repeat;
+ margin-top: 60px;
+ max-height: 793px;
+}
+
+.desktop-section-four-arrow-up {
+ position: absolute;
+ top: 31px;
+ right: 65px;
+ color: white;
+ font-size: 38px;
+}
+
+.section-four-outpouring {
+ position: absolute;
+ bottom: 24px;
+ left: 80px;
+ color: white;
+ font-size: 40px !important;
+ font-family: laureate_v1;
+}
