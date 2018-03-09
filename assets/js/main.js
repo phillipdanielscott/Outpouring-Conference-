@@ -16,6 +16,8 @@ $(document).ready(function() {
             $(this).fadeIn();
         });
     });
+
+    // section fraction numbers
     $('.fraction').each(function(key, value) {
         $this = $(this)
         var split = $this.html().split("/")
@@ -23,6 +25,16 @@ $(document).ready(function() {
             $this.html('<span class="top">' + split[0] + '</span><span class="bottom">' + split[1] + '</span>')
         }
     });
+
+
+    $("#moveDown-2").click(function() {
+        console.log("You have clicked move down arrow");
+        $('html, body').animate({
+            scrollTop: $("#secondSection").offset().top
+        }, 2000);
+    });
+
+
 
 });
 

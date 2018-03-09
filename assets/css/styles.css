@@ -48,6 +48,18 @@ mark {
  padding: 0px;
 }
 
+.mobile-container {
+ display: none;
+}
+
+.mobile {
+ display: none;
+}
+
+.mobile-second-section {
+ display: none;
+}
+
 
 /*============================================================================
 
@@ -57,12 +69,12 @@ mark {
 
 ==============================================================================*/
 
-.sidenav {
+
+/*.sidenav {
  height: 100%;
  width: 0;
  position: fixed;
  z-index: 1;
- /*top: 0;*/
  left: 0;
  background-color: #111;
  overflow-x: hidden;
@@ -139,6 +151,12 @@ mark {
  display: block;
 }
 
+@media screen and (max-width: 768px) {
+ #mySidenav {
+  max-width: 100%;
+ }
+}
+
 @media screen and (max-height: 450px) {
  .sidenav {
   padding-top: 15px;
@@ -146,7 +164,7 @@ mark {
  .sidenav a {
   font-size: 18px;
  }
-}
+}*/
 
 
 /*============================================================================
@@ -185,11 +203,10 @@ mark {
 }
 
 .register-now-font {
- color: white;
  font-size: 44px;
  position: absolute;
- bottom: -23px;
- right: 0px;
+ bottom: -51px;
+ right: -16px;
  line-height: 42px;
  color: white;
  font-family: laureate_v2;
@@ -197,21 +214,21 @@ mark {
 
 .location-details-wrapper {
  padding: 0px;
+ margin-right: 35px;
 }
 
 .first-section-wrapper h1 {
  font-size: 160px;
  position: absolute;
- right: 81px;
+ right: 128px;
  font-family: laureate_v2;
  bottom: 43%;
 }
 
 .video-wrapper {
- width: 79%;
- height: 97%;
+ width: 75%;
+ height: 82vh;
  overflow: hidden;
- padding-left: 34px;
 }
 
 .down-arrow {
@@ -227,13 +244,10 @@ mark {
  position: absolute;
  bottom: 0px;
  bottom: 120px;
- left: -130px;
+ left: -182px;
 }
 
 @media (max-height: 1080px) and (max-width: 1920px) {
- .video-wrapper {
-  height: 86%;
- }
  .register-now-font {
   font-size: 39px;
   right: -16px;
@@ -251,18 +265,17 @@ mark {
 
 @media only screen and (max-width:1680px) {
  .video-wrapper {
-  height: 97%;
- }
- .vertical-text {
-  font-size: 26px;
+  height: 82vh;
+  width: 74%;
  }
  .register-now-font {
   font-size: 41px;
-  right: -12px;
-  bottom: -18px;
+  right: -26px;
+  bottom: -58px;
  }
  .vertical-text {
-  right: 28px;
+  right: 20px;
+  font-size: 26px;
  }
  .jc-logo {
   max-width: 35px;
@@ -281,24 +294,28 @@ mark {
  }
  .first-section-wrapper h3 {
   color: white;
-  font-size: 32px;
-  position: absolute;
-  bottom: 0px;
-  bottom: 140px;
-  left: -114px;
+  font-size: 36px;
+  left: -165px;
+  bottom: 134px;
+ }
+ audio, video {
+  display: inline-block;
+  position: relative;
+  height: 101%;
+  width: 107%;
+ }
+ .location-details-wrapper {
+  margin-right: 50px;
  }
 }
 
 @media only screen and (max-width:1600px) {
- .video-wrapper {
-  height: 89%;
- }
  .first-section-wrapper {
-  padding: 77px 50px;
+  padding: 92px 61px;
  }
  .first-section-wrapper h1 {
-  font-size: 130px;
   bottom: 47%;
+  right: 77px;
  }
  .vertical-text {
   right: 24px;
@@ -306,7 +323,24 @@ mark {
  .register-now-font {
   font-size: 37px;
   right: -19px;
-  bottom: 49px;
+  line-height: 36px;
+  bottom: -45px;
+ }
+ audio, video {
+  display: inline-block;
+  position: relative;
+  height: 101%;
+  width: 113%;
+ }
+ .video-wrapper {
+  width: 75%;
+  height: 82vh;
+ }
+ .first-section-wrapper h3 {
+  color: white;
+  font-size: 36px;
+  left: -137px;
+  bottom: 134px;
  }
 }
 
@@ -316,19 +350,15 @@ mark {
   right: 86px;
  }
  .first-section-wrapper {
-  padding: 80px 45px;
+  padding: 107px 45px;
  }
  .vertical-text {
   right: 24px;
-  font-size: 24px;
- }
- .video-wrapper {
-  height: 95%;
-  padding-left: 42px;
+  font-size: 22px;
  }
  .register-now-font {
   font-size: 34px;
-  bottom: 0px;
+  bottom: -27px;
   right: -21px;
   line-height: 31px;
  }
@@ -354,12 +384,19 @@ mark {
  .fraction {
   right: 58px;
  }
+ audio, video {
+  display: inline-block;
+  position: relative;
+  height: 108%;
+  width: 113%;
+ }
+ .video-wrapper {
+  width: 88%;
+  height: 83vh;
+ }
 }
 
 @media only screen and (max-width:1366px) {
- .video-wrapper {
-  height: 88%;
- }
  .vertical-text {
   font-size: 20px;
  }
@@ -397,18 +434,26 @@ mark {
 
 @media only screen and (max-width:1280px) {
  .video-wrapper {
-  height: 99%;
+  width: 66%;
+  height: 77vh;
+ }
+ audio, video {
+  display: inline-block;
+  position: relative;
+  height: 109%;
+  width: 116%;
  }
  .register-now-font {
   bottom: -33px;
  }
  .first-section-wrapper h1 {
   font-size: 100px;
-  right: 85px;
+  right: 169px;
   bottom: 45%;
  }
  .first-section-wrapper h3 {
-  bottom: 115px;
+  bottom: 92px;
+  left: -184px;
  }
 }
 
@@ -436,12 +481,14 @@ mark {
  }
  .first-section-wrapper h1 {
   font-size: 74px;
+  right: 75px;
+  bottom: 45%;
  }
  .first-section-wrapper h3 {
-  font-size: 26px;
+  font-size: 22px;
   position: absolute;
   bottom: 0px;
-  bottom: 143px;
+  bottom: 118px;
   left: -72px;
  }
  .register-now-font {
@@ -453,6 +500,9 @@ mark {
  .vertical-text {
   font-size: 16px;
   top: 33px;
+ }
+ .location-details-wrapper {
+  margin-right: 23px;
  }
 }
 
@@ -471,7 +521,7 @@ mark {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 515px;
+  height: 463px;
  }
  .vertical-text {
   font-size: 26px;
@@ -535,66 +585,94 @@ mark {
  }
 }
 
-
-/*============================================================================
-
-
-                                Second SECTION
-
-
-==============================================================================*/
-
-.second-section h3 {
- font-size: 80px;
- line-height: 1.5;
- color: #959595;
+@media only screen and (max-width:425px) {
+ .mobile-container {
+  padding: 36px 59px;
+ }
+ .register-now-font {
+  font-size: 58px;
+  bottom: -18px;
+  right: -44px;
+  line-height: 29px;
+  color: black;
+ }
+ .vertical-text {
+  font-size: 17px;
+  right: -28px;
+ }
+ .mobile-container .button-container {
+  position: absolute;
+  bottom: 0;
+  right: 33%;
+  font-size: 9px;
+  bottom: 101px;
+ }
+ .water-fall-bg {
+  height: 329px;
+ }
+ .mobile-container h3 {
+  font-size: 22px;
+  top: 59%;
+ }
+ .register-button {
+  font-size: 17px;
+ }
+ .mobile-container .button-container {
+  right: 38%;
+ }
+ .down-arrow {
+  max-width: 35px;
+ }
+ .jc-logo {
+  max-width: 35px;
+  right: 27px;
+  bottom: 22px;
+  top: unset;
+ }
+ .fraction {
+  font-size: 14px;
+ }
 }
 
-.second-section h3:nth-child(2) {
- color: #fff;
- font-size: 55px;
+@media only screen and (max-width:375px) {
+ .register-now-font {
+  font-size: 49px;
+ }
+ .water-fall-bg {
+  height: 300px;
+ }
+ .vertical-text {
+  font-size: 16px;
+  right: -28px;
+ }
+ .mobile-container .button-container {
+  position: absolute;
+  bottom: 0;
+  right: 36%;
+  font-size: 9px;
+  bottom: 78px;
+ }
+ .register-button {
+  padding: 9px 23px;
+ }
+ .mobile-container h3 {
+  right: 28%;
+  font-size: 20px;
+ }
+ .jc-logo {
+  max-width: 30px;
+ }
+ .down-arrow {
+  left: 18px;
+  bottom: 21px;
+  max-width: 33px;
+ }
 }
 
-.second-section {
- padding: 28px 59px;
-}
-
-.second-section #openbtn {
- position: absolute;
-}
-
-.second-section h6 {
- position: absolute;
- bottom: 19px;
- font-family: laureate_v2;
- color: white;
- font-size: 30px;
-}
-
-.section-two-up-arrow {
- position: absolute;
- right: 60px;
- top: 37px;
- max-width: 50px;
-}
-
-
-/*============================================================================
-
-
-                                third SECTION
-
-
-==============================================================================*/
-
-.embed-responsive {
- margin: 0 auto !important;
- width: 75% !important;
- height: 75% !important;
-}
-
-.conference-vid-text {
- padding-top: 20px;
+@media (max-height: 812px) and (max-width: 374px) {
+ .water-fall-bg {
+  height: 370px;
+ }
 }
 
 
@@ -606,11 +684,18 @@ mark {
 
 ==============================================================================*/
 
-.jc-logo-bottom {
- max-width: 42px;
+.outpouring-bottom {
+ position: absolute;
+ color: white;
+ bottom: 26px;
+ left: 51px;
+}
+
+.jc-logo {
+ max-width: 37px;
  position: absolute;
  right: 61px;
- top: 28px;
+ bottom: 28px;
 }
 
 .fourth-section .row {
@@ -618,7 +703,7 @@ mark {
 }
 
 .fourth-section-content-wrapper {
- padding: 80px 160px;
+ padding: 52px 160px;
 }
 
 .speaker-1, .speaker-2, .speaker-3, .speaker-4 {
@@ -698,7 +783,7 @@ mark {
  background-size: cover;
  background-repeat: no-repeat;
  margin-top: 60px;
- max-height: 793px;
+ max-height: 669px;
 }
 
 .desktop-section-four-arrow-up {
@@ -716,4 +801,110 @@ mark {
  color: white;
  font-size: 40px !important;
  font-family: laureate_v1;
+}
+
+.fourth-section-mobile {
+ display: block;
+}
+
+@media only screen and (max-width:1680px) {
+ .bottom-first-half {
+  margin-right: 30px;
+ }
+ .speaker-container span {
+  font-size: 12px;
+ }
+}
+
+@media only screen and (max-width:1600px) {
+ .speaker-container p {
+  font-size: 16px;
+ }
+ .fourth-section-content-wrapper {
+  padding: 52px 130px;
+ }
+ .speaker-container h3 {
+  font-family: laureate_v2;
+  font-weight: 600;
+  font-size: 38px;
+  padding-bottom: 5px;
+ }
+}
+
+@media only screen and (max-width:1440px) {
+ .water-fall-bg-bottom {
+  max-height: 615px;
+ }
+ .bottom-first-half {
+  margin-right: 30px;
+ }
+ .bottom-second-half h4 {
+  font-size: 40px;
+ }
+ .water-fall-bg-bottom {
+  margin-top: 40px;
+ }
+}
+
+@media only screen and (max-width:1024px) {
+ .speaker-container p {
+  font-size: 14px;
+ }
+ .speaker-container h3 {
+  font-size: 30px;
+  padding-bottom: 0px;
+ }
+ .fourth-section-content-wrapper {
+  padding: 52px 45px;
+ }
+}
+
+@media only screen and (max-width:768px) {
+ .fourth-section-desktop {
+  display: none;
+ }
+ .fourth-section-mobile {
+  display: block;
+  padding: 149px;
+ }
+ .fourth-section-mobile .row {
+  display: block;
+  text-align: center;
+  margin-bottom: 100px;
+ }
+ .fourth-section-mobile p {
+  margin-bottom: 0px;
+  color: #636466;
+ }
+ .fourth-section-mobile span {
+  color: #636466;
+  font-size: 12px;
+ }
+ .fourth-section-mobile .details {
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: #636466;
+ }
+}
+
+@media only screen and (max-width:425px) {
+ .fourth-section-mobile {
+  padding: 54px;
+ }
+ .fourth-section-mobile .row {
+  margin-bottom: 44px;
+ }
+ .jc-logo {
+  max-width: 30px;
+  position: absolute;
+  right: 32px;
+  bottom: 28px;
+ }
+ .outpouring-bottom {
+  position: absolute;
+  color: white;
+  bottom: 26px;
+  left: 23px;
+  font-size: 22px;
+ }
 }
